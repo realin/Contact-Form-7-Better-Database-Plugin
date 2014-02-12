@@ -76,7 +76,7 @@ function _cf7bdb_catch_form( $cf7 )
     $values['form_data']['form_title']   = $cf7->title;
 
     // Try adding the form data to the database
-    if( ($result = add_cf7db_entry($values)) === true )
+    if( ($result = _add_cf7db_entry($values)) === true )
         $msg = 'Your information has been successfully submitted!';
     else
         $msg = $result === false ? 'Your information couldn\'t be saved!':$result;
